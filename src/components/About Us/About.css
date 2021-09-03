@@ -1,0 +1,46 @@
+.about{
+background-color: #ffffff;
+  padding: 120px 20px;
+  overflow-x: hidden;
+  /* height: 100px; */
+  background: linear-gradient(300deg, #7de8ff 50%, #ffffff 50%);
+}
+
+
+.item-text-about{
+  color: #030303;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.text{
+  text-align: center;
+}
+
+.about-statement{
+  font-size: 23px;
+}
+
+.container-about{
+  display: flex;
+}
+
+.counter{
+  font-size: 48px;
+}
+
+.img-about{
+  width: 100%;
+}
+
+.item-img-about{
+  display: flex;
+  flex-direction: row;
+
+  
+
+}
+
+.counter-container{
+  margin-top: 129px !important;
+}
