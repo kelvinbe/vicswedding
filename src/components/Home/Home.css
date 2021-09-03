@@ -1,6 +1,10 @@
 .home{
   background-color: #7de8ff;
   padding: 120px 0;
+  height: 400px;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #7de8ff 50%, #ffffff 50%);
+
 
 }
 .img{
@@ -20,6 +24,7 @@
   z-index: 13;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
 }
 .item-img{
   position: absolute;
