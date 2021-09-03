@@ -7,7 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init({
-    duration: 2000, // values from 0 to 3000, with step 50ms
+    duration: 3000, // values from 0 to 3000, with step 50ms
 
 });
 
@@ -21,7 +21,7 @@ function Home(props) {
         <div className="home">
         <Grid container spacing={3} className="container">
             <Grid item xs={12} className="item-text" data-aos="fade-right">
-           <h1 className="text">Welcome to Ark Bookings</h1> 
+           <h1 className="text">Welcome to Ark Hostels</h1> 
             </Grid>
             <Grid item xs ={12} className="item-img" data-aos="fade-left">
                 <img src={student} alt="" className="img"/>

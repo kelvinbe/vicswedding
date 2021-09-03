@@ -1,0 +1,7 @@
+.service{
+    background-color: #7de8ff;
+    padding: 120px 0;
+    overflow-x: hidden;
+    height: 400px;
+    background: linear-gradient(240deg, #ffffff 50%, #7de8ff 50%);
+}
