@@ -22,8 +22,13 @@ const useStyles = makeStyles(() => ({
       },
     },
     onScrollHeader:{
-      backgroundColor: 'blue',
-      boxShadow:'0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)'
+      backgroundColor: '#0895a2',
+      boxShadow:'0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)',
+      paddingRight: "79px",
+      paddingLeft: "118px",
+      "@media (max-width: 900px)": {
+        paddingLeft: 0,
+      },
     },
     drawerContainer: {
         padding: "20px 30px",
