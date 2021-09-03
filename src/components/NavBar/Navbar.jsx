@@ -13,12 +13,17 @@ import MenuIcon from '@material-ui/icons/Menu'
 
 const useStyles = makeStyles(() => ({
     header: {
-      backgroundColor: "#400CCC",
+      backgroundColor: "transparent",
+      boxShadow: 'none',
       paddingRight: "79px",
       paddingLeft: "118px",
       "@media (max-width: 900px)": {
         paddingLeft: 0,
       },
+    },
+    onScrollHeader:{
+      backgroundColor: 'blue',
+      boxShadow:'0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)'
     },
     drawerContainer: {
         padding: "20px 30px",
@@ -41,11 +46,22 @@ export default function Header() {
       mobileView: false,
       drawerOpen: false
     });
+  const [scrollNav, setScrollNav] = useState(false)
+
   
     const { mobileView, drawerOpen } = state;
     const classes = useStyles()
+
+    const changeNav = () => {
+      if(window.scrollY >= 80){
+        setScrollNav(true)
+      } else{
+        setScrollNav(false)
+      }
+    }
   
     useEffect(() => {
+      window.addEventListener('scroll', changeNav)
       const setResponsiveness = () => {
         return window.innerWidth < 900
           ? setState((prevState) => ({ ...prevState, mobileView: true }))
@@ -158,7 +174,7 @@ export default function Header() {
 
     return(
         <header>
-        <AppBar className={classes.header}>
+        <AppBar className={scrollNav ? classes.onScrollHeader : classes.header}>
           {mobileView ? displayMobile() : displayDesktop()}
         </AppBar>
       </header>
