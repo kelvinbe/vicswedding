@@ -1,0 +1,21 @@
+.contact{
+    background-color: #ffffff;
+      padding: 120px 20px;
+      overflow-x: hidden;
+      /* height: 100px; */
+      background: linear-gradient(270deg, #7de8ff 50%, #ffffff 50%);
+    }
+
+
+.text-contact{
+    text-align: left;
+}
+
+.MuiCard-root {
+    background-color: #7de8ff !important;
+}
+
+
+.MuiCardContent-root {
+    padding: 17px;
+}

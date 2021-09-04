@@ -1,12 +1,23 @@
+import React, { useState, useEffect } from 'react'
 import './App.css';
 import Header from './components/NavBar/Navbar';
 import { BrowserRouter as Router } from "react-router-dom";
 import Landing from './Pages/Landing';
 import "react-slideshow-image/dist/styles.css";
-
+import Loading from './components/Loading/Loading'
+import 'react-circular-progressbar/dist/styles.css';
 
 function App() {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 6000)
+  }, [])
+
+
   return (
+    <>
+    { loading === false ? (
     <div className="App">
       <Router>
 
@@ -15,7 +26,11 @@ function App() {
 
       </Router>
 
-    </div>
+    </div>):
+    <div>
+    <Loading />
+    </div>}
+    </>
   );
 }
 

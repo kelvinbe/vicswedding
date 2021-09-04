@@ -110,7 +110,7 @@ function Service(props) {
             </Grid>
 
             <Grid item xs={12}  className="service-button" data-aos="fade-bottom">
-            <Button variant="outlined" >Get Started</Button>
+            <Button variant="outlined" >Get Booking</Button>
             </Grid>
             </Grid>
         </Grid>
