@@ -46,7 +46,7 @@ function About(props) {
             <Grid item xs ={12} className="item-img-about" data-aos="fade-left">
                 <Grid item xs={6}
                 >
-            <img src={discuss} alt="" className="img-about"/>
+                <img src={discuss} alt="" className="img-about"/>
 
                 </Grid>
                 <Grid item xs={6} className="counter-container">

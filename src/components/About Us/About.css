@@ -35,7 +35,8 @@ background-color: #ffffff;
 
 .item-img-about{
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
   
 

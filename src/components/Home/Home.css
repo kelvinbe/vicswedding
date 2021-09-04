@@ -4,8 +4,6 @@
   height: 400px;
   overflow-x: hidden;
   background: linear-gradient(180deg, #7de8ff 50%, #ffffff 50%);
-
-
 }
 .img{
   width: 100%;
@@ -17,6 +15,8 @@
 }
 .container{
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .item-text{

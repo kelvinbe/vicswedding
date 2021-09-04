@@ -22,10 +22,10 @@ function ContactUs(props) {
             
             <Grid item xs ={12} data-aos="fade-left">
                 <p className="about-statement">
-            Lets talk about getting you onboarded, booking your room and finally get you moving in.
+            Lets talk about getting you onboard, booking your room and finally get you moving in.
                 </p>
             </Grid>
-            <Grid item xs ={12}>
+            <Grid item xs ={12} sm={4}>
                 <Card>
                 <CardContent>
                 <PhoneInTalkIcon />

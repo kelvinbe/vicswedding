@@ -20,10 +20,10 @@ function Home(props) {
     return (
         <div className="home">
         <Grid container spacing={3} className="container">
-            <Grid item xs={12} className="item-text" data-aos="fade-right">
+            <Grid item xs={12} xl={12} className="item-text" data-aos="fade-right">
            <h1 className="text">Welcome to Ark Hostels</h1> 
             </Grid>
-            <Grid item xs ={12} className="item-img" data-aos="fade-left">
+            <Grid item xs ={12} xl={12} className="item-img" data-aos="fade-left">
                 <img src={student} alt="" className="img"/>
             </Grid>
         </Grid>
