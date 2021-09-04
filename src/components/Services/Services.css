@@ -1,0 +1,65 @@
+.service{
+    background-color: #7de8ff;
+    padding: 120px 20px;
+    overflow-x: hidden;
+    /* height: 400px; */
+    background: linear-gradient(240deg, #ffffff 50%, #7de8ff 50%);
+}
+
+
+.each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 438px;
+    border: 3px solid #7de8ff;
+    border-radius: 25px;
+  
+  }
+  
+  .each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+
+  .container-services{
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      color: rgb(3, 3, 3);
+      padding: 80px 0;
+  }
+
+  .counter-service{
+      font-size: 31px;
+  }
+
+
+  .MuiButton-outlined {
+    border: 1px solid #000000 !important;
+    padding: 8px 34px !important;
+}
+
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    color: antiquewhite;
+}
+
+
+
+.MuiButton-root:hover {
+    text-decoration: bold !important;
+    background-color: hsl(180deg 89% 45%) !important;
+}
+
+.service-button{
+    margin-top: 40px !important;
+}
+
+

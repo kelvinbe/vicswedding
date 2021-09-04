@@ -22,7 +22,7 @@ const useStyles = makeStyles(() => ({
       },
     },
     onScrollHeader:{
-      backgroundColor: '#0895a2',
+      backgroundColor: '#7de8ff',
       boxShadow:'0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)',
       paddingRight: "79px",
       paddingLeft: "118px",
@@ -139,7 +139,7 @@ export default function Header() {
       const displayDesktop = () => {
         return (
           <Toolbar className={classes.toolbar}>
-            {'Heloos'}
+            {'Ark Hostels'}
             {getMenuButtons()}
           </Toolbar>
         );
@@ -168,11 +168,12 @@ export default function Header() {
             anchor: "left",
             open: drawerOpen,
             onClose: handleDrawerClose,
+            backgroundColor: '#7de8ff'
           }}
         >
           <div className={classes.drawerContainer}>{getDrawerChoices()}</div>
         </Drawer>
-    <div>{'Ark Booking'}</div>
+    <div>{'Ark Hostels'}</div>
     </Toolbar>
         );
       };
