@@ -139,7 +139,7 @@ export default function Header() {
       const displayDesktop = () => {
         return (
           <Toolbar className={classes.toolbar}>
-            {'Heloos'}
+            {'Ark Hostels'}
             {getMenuButtons()}
           </Toolbar>
         );
