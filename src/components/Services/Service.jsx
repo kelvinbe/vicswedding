@@ -7,13 +7,20 @@ import room from '../../assets/best.jpg'
 import room2 from '../../assets/room.jpg'
 import room3 from '../../assets/rom.png'
 import '../Services/Services.css';
-import { Slide } from 'react-slideshow-image';
+import { Fade } from 'react-slideshow-image';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import AlarmIcon from '@material-ui/icons/Alarm';
 import AirlineSeatIndividualSuiteIcon from '@material-ui/icons/AirlineSeatIndividualSuite';
 import CountUp, {startAnimation}  from 'react-countup';
 import Button from '@material-ui/core/Button';
 import AOS from 'aos';
+import vic3 from '../../assets/vic3.jpg'
+import vic2 from '../../assets/vic2.jpg'
+import { Typography } from '@material-ui/core';
+import flowers from '../../assets/flowers.png'
+
+
+
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init({
@@ -21,33 +28,29 @@ AOS.init({
 
 });
 
-const slideImages = [
-    room,
-    room2,
-    room3
+
+const fadeImages = [
+    vic2,
+    vic3
   ];
 
 
 
- 
+
 
 const Slideshow = () => {
     return (
       <div className="slide-container">
-        <Slide>
+        <Fade>
           <div className="each-slide">
-            <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
+            <div style={{'backgroundImage': `url(${fadeImages[0]})`}}>
             </div>
           </div>
           <div className="each-slide">
-            <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
+            <div style={{'backgroundImage': `url(${fadeImages[1]})`}}>
             </div>
           </div>
-          <div className="each-slide">
-            <div style={{'backgroundImage': `url(${slideImages[2]})`}}>
-            </div>
-          </div>
-        </Slide>
+        </Fade>
       </div>
     )
 }
@@ -76,44 +79,38 @@ function Service(props) {
 
     return (
         <div className="service">
+           {/* <img
+        component='img'
+        className="flowers-services"
+        height="140"
+        src={flowers}/> */}
+          <Grid container>
+            
+            
+        </Grid>
              <Grid item xs={12}>
-           <h1 className="text">Our Services</h1> 
-            </Grid>
-        <Grid container>
-            <Grid item xs ={12}>
+           {/* <h1 className="text-service">GROOM & BRIDE</h1>  */}
+           <Grid item xs ={12} sm={6} md={7} sm={12}>
                 {Slideshow()}
             </Grid>
-            <Grid container xs={12} className="container-services">
-                <Grid xs={12} data-aos="fade-right">
-               <h2 className="text">We offer accomodation that is</h2> 
-                </Grid>
-            <Grid item xs ={4} data-aos="fade-left">
-                <AttachMoneyIcon />
-                <div>
-                    Affordable
-                </div>
-                <CountUp start={scrollNav && 0} end={100} suffix=" %" duration={7.75}  className="counter-service"/>
-            </Grid>
-            <Grid item xs ={4} data-aos="fade-left">
-                <AlarmIcon />
-               <div>Convenient</div> 
-               <CountUp start={scrollNav && 0} end={100} suffix=" %" duration={7.75}  className="counter-service"/>
+           {/* <h3 style={{color: '#965A00'}}>Groom</h3>
+    <Typography variant="h3" style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px'}}>
+    "Leo ipsum justo, enim augue neque, eu pulvinar etiam. 
+    Elit quam gravida a nec. Mauris eu nulla vulputate vitae nisl, 
+    massa vulputate tellus sit. Sit integer cras nibh sodales."
+  
+    </Typography>
+
+    <h3 style={{color: '#965A00'}}>Bride</h3>
+    <Typography variant="h3" style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px'}}>
+    "Leo ipsum justo, enim augue neque, eu pulvinar etiam. 
+    Elit quam gravida a nec. Mauris eu nulla vulputate vitae nisl, 
+    massa vulputate tellus sit. Sit integer cras nibh sodales.""
+
+    </Typography> */}
 
             </Grid>
-            <Grid item xs ={4} data-aos="fade-left">
-                <AirlineSeatIndividualSuiteIcon />
-               <div>
-               Spacious
-                   </div> 
-                <CountUp startOnMount={true} start={scrollNav && 0} end={100} suffix=" %" duration={7.75}  className="counter-service"/>
-
-            </Grid>
-
-            <Grid item xs={12}  className="service-button" data-aos="fade-bottom">
-            <Button variant="outlined" >Get Booking</Button>
-            </Grid>
-            </Grid>
-        </Grid>
+        
         </div>
     );
 }

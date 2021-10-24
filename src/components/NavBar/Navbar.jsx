@@ -9,26 +9,33 @@ import { Button } from "@material-ui/core";
 import MenuItem from '@material-ui/core/MenuItem';
 import {Link as RouterLink} from 'react-router-dom'
 import MenuIcon from '@material-ui/icons/Menu'
+import ring from '../../assets/Vector.png'
 
 
 const useStyles = makeStyles(() => ({
     header: {
       backgroundColor: "transparent",
       boxShadow: 'none',
-      paddingRight: "79px",
+      // paddingRight: "79px",
       paddingLeft: "118px",
+      alignItems: 'center',
       "@media (max-width: 900px)": {
         paddingLeft: 0,
+        paddingRight: '112px',
+        height:'50px'
       },
     },
     onScrollHeader:{
-      backgroundColor: '#7de8ff',
+      backgroundColor: '#fffcfc',
       boxShadow:'0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)',
       paddingRight: "79px",
       paddingLeft: "118px",
       "@media (max-width: 900px)": {
         paddingLeft: 0,
+        paddingRight: '112px',
+        height:'50px'
       },
+      height: '53px'
     },
     drawerContainer: {
         padding: "20px 30px",
@@ -42,6 +49,7 @@ const useStyles = makeStyles(() => ({
      toolbar: {
         display: "flex",
         justifyContent: "space-between",
+        color:'rgb(150, 90, 0)'
       },
 }))
 
@@ -83,18 +91,18 @@ export default function Header() {
     const headersData = [
         {
           label: "Home",
-          href: "/listings",
+          href: "/home",
         },
         {
-          label: "Booking",
+          label: "Groom & Bride",
           href: "/mentors",
         },
         {
-          label: "Sales",
+          label: "When & Where",
           href: "/account",
         },
         {
-          label: "About Us",
+          label: "The Journey",
           href: "/logout",
         },
       ];
@@ -139,7 +147,7 @@ export default function Header() {
       const displayDesktop = () => {
         return (
           <Toolbar className={classes.toolbar}>
-            {'Ark Hostels'}
+             <h1 className="title">Victor {<img src={ring} alt="" srcset="" className="gif" />} Sharon</h1>
             {getMenuButtons()}
           </Toolbar>
         );
@@ -155,7 +163,7 @@ export default function Header() {
             <IconButton
               {...{
                 edge: "start",
-                color: "inherit",
+                color: "#965A00",
                 "aria-label": "menu",
                 "aria-haspopup": "true",
                 onClick: handleDrawerOpen,
@@ -173,7 +181,10 @@ export default function Header() {
         >
           <div className={classes.drawerContainer}>{getDrawerChoices()}</div>
         </Drawer>
-    <div>{'Ark Hostels'}</div>
+    <div style={{textAlign: 'center', color: '#965A00', fontFamily: 'Caladea', fontSize: '36px', marginTop: '-7px'}}>
+    <h6 className="title">Victor {<img src={ring} alt="" srcset="" className="gif" />} Sharon</h6>
+
+    </div>
     </Toolbar>
         );
       };

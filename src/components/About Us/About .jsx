@@ -5,8 +5,12 @@ import '../About Us/About.css';
 import discuss from '../../assets/explaining.svg'
 import CountUp, {startAnimation}  from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
+import flowers from '../../assets/flowers.png'
+import rings from '../../assets/rings.png'
+
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { Button, Card, CardActions, CardContent, CardMedia, Typography, Dialog, DialogActions, Slide, DialogTitle, DialogContent, DialogContentText } from '@material-ui/core';
 // ..
 AOS.init({
     duration: 1000, // values from 0 to 3000, with step 50ms
@@ -23,37 +27,68 @@ const onVisibilityChange = isVisible => {
     }
 }
 
-
-
+const Transition = React.forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+  });
 
 
 function About(props) {
     const [viewPortEntered, setViewPortEntered] = useState(false);
+    const [open, setOpen] = React.useState(false);
+
+    const handleClickOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };
     return (
         <div className="about">
-            <Grid item xs={12} className="item-text-about" data-aos="fade-right" >
-           <h1 className="text" >About Us</h1> 
+            <Grid item xs={12} className="item-text-about">
+           <h1 className="text" >Support Us</h1> 
             </Grid>
-        <Grid container spacing={3} className="container-about">
-            
-            <Grid item xs ={12} data-aos="fade-left">
-                <p className="about-statement">
-            We are an establishment that believes in the investment of our youth through education.
-            Thus we seek to solve the problem of accomodation and living for students as they pursue their education
-                </p>
-            </Grid>
-            <VisibilitySensor delayedCall>
-            <Grid item xs ={12} className="item-img-about" data-aos="fade-left">
-                <Grid item xs={6}
-                >
-                <img src={discuss} alt="" className="img-about"/>
+        <Grid container className="container-about">
+       <img
+        component='img'
+        className="flowers"
+        height="140"
+        src={flowers}/>
+        <Card>
 
-                </Grid>
-                <Grid item xs={6} className="counter-container">
-                <CountUp start={0} end={10} duration={2.75}  className="counter"/>Yrs of service
-                </Grid>
-            </Grid>
-            </VisibilitySensor>
+        <CardContent>
+        
+    <img src={rings} alt="" srcset="" style={{width: '70px', marginTop: '50px'}}/>
+    <Typography variant="h3" style={{fontFamily: 'Birthstone', color: '#965A00'}}>
+        Support Us
+    </Typography>
+    <Typography variant="h3" style={{fontFamily: 'Birthstone', color: '#965A00', fontSize: '25px'}}>
+        Stand with us on this journey
+    </Typography>
+      <CardActions>
+        <Button variant="contained" className="button-color" onClick={handleClickOpen}>Support</Button>
+        <Dialog
+        open={open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClose}
+        aria-describedby="alert-dialog-slide-description"
+      >
+        <DialogTitle>{"Thank You For Your Support!"}</DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-slide-description">
+            Please Send your contribution to the following Mpesa Paybill
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button variant="contained" className="dialog-button" onClick={handleClose}>Disagree</Button>
+          <Button variant="contained" className="dialog-button" onClick={handleClose}>Agree</Button>
+        </DialogActions>
+      </Dialog>
+      </CardActions>
+      </CardContent>
+    </Card>
+
         </Grid>
         </div>
     );

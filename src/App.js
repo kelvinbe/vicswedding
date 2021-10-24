@@ -6,27 +6,28 @@ import Landing from './Pages/Landing';
 import "react-slideshow-image/dist/styles.css";
 import Loading from './components/Loading/Loading'
 import 'react-circular-progressbar/dist/styles.css';
-
 function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 6000)
+    setTimeout(() => setLoading(false), 5000)
   }, [])
 
 
   return (
     <>
     { loading === false ? (
-    <div className="App">
+    <div className="fill-window">
       <Router>
 
       <Header />
       <Landing />
+     
 
       </Router>
 
-    </div>):
+    </div>
+    ):
     <div>
     <Loading />
     </div>}

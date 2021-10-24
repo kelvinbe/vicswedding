@@ -1,9 +1,8 @@
 .about{
-background-color: #ffffff;
+  background-color: white;
   padding: 120px 20px;
   overflow-x: hidden;
-  /* height: 100px; */
-  background: linear-gradient(300deg, #7de8ff 50%, #ffffff 50%);
+  overflow-clip-margin: initial;
 }
 
 
@@ -11,6 +10,8 @@ background-color: #ffffff;
   color: #030303;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+  padding-bottom: 80px;
+
 }
 
 .text{
@@ -23,6 +24,8 @@ background-color: #ffffff;
 
 .container-about{
   display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 .counter{
@@ -37,11 +40,47 @@ background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  
-
 }
 
 .counter-container{
   margin-top: 129px !important;
+}
+
+.MuiCard-root {
+  background-color: #FEDFE3 !important;
+  width: 318px;
+  height: 366px;
+  border: 'solid black 2px '!important;
+  padding: 10px
+
+  
+}
+
+.MuiCardContent-root {
+  border: 'solid black 2px '!important
+}
+
+.MuiCardContent-root:last-child {
+  padding-bottom: 24px;
+  border: 1px solid #BB9096;
+  height: 320px;
+}
+
+.flowers{
+  position: absolute;
+  margin-top: -408px;
+}
+
+.MuiCardActions-root {
+  margin-top: 61px;
+  justify-content: center;
+
+}
+
+.button-color {
+  background-color: #B95C50 !important;
+}
+
+.dialog-button {
+  background-color: rgb(240, 93, 117) !important;
 }

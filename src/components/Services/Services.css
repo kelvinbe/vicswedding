@@ -1,9 +1,11 @@
 .service{
-    background-color: #7de8ff;
+    background-color: white;
     padding: 120px 20px;
     overflow-x: hidden;
     /* height: 400px; */
-    background: linear-gradient(240deg, #ffffff 50%, #7de8ff 50%);
+    /* background: linear-gradient(240deg, #ffffff 50%, #7de8ff 50%); */
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -13,7 +15,6 @@
     justify-content: center;
     background-size: cover;
     height: 438px;
-    border: 3px solid #7de8ff;
     border-radius: 25px;
   
   }
@@ -48,7 +49,7 @@
     display: inherit;
     align-items: inherit;
     justify-content: inherit;
-    color: antiquewhite;
+    color: rgb(129 123 112);
 }
 
 
@@ -62,4 +63,29 @@
     margin-top: 40px !important;
 }
 
+.text-service{
+    color: rgb(115 105 105);
+    text-align: center;
 
+}
+
+.flowers-services{
+    position: absolute;
+    margin-top: -91px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .react-slideshow-container .nav {
+    display: none;
+}
+
+
+@media only screen and (max-device-width: 900px){
+    .text-service{
+        color: rgb(115 105 105);
+        /* text-align: center; */
+    
+    }
+    
+  }

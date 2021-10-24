@@ -14,7 +14,7 @@ function Footer(props) {
                 <Container maxWidth="lg">
                 <Grid container spacing={5}>
                     <Grid item xs={12} sm={4}>
-                        @2021 Ark Hostels All Rights Reserverd
+                        @2021 kelvinbeno Dev  All Rights Reserverd
                         </Grid>
                 </Grid>
                 </Container>

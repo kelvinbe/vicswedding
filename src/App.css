@@ -1,1 +1,10 @@
 @import "react-slideshow-image/dist/styles.css";
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+.fill-window {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
