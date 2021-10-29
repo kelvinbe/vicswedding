@@ -1,6 +1,6 @@
 .home{
   background-color: white;
-  padding: 120px 0;
+  padding: 170px 0;
   /* overflow-x: hidden; */
   position: relative;
   height: 100%;
@@ -29,10 +29,11 @@ html, body{
   position: relative;
   display: flex;
   justify-content: center;
+  margin-top: -80px;
 }
 
 .item-text{
-  margin-top: 200px;
+  margin-top: 378px !important;
   position: absolute;
   z-index: 13;
   color: #ffffff;
@@ -42,6 +43,7 @@ html, body{
 
 @media only screen and (max-device-width: 480px){
   .item-text{
+    margin-top: 278px;
     position: absolute;
     z-index: 13;
     color: #ffffff;
@@ -56,11 +58,32 @@ html, body{
 @media (max-width: 900px){
   .home{
     background-color: white;
-    padding: 120px 0;
+    padding: 200px 0;
     /* overflow-x: hidden; */
     position: relative;
     height: 100%;
     max-height: 0vh;
+    margin-top: -43px;
+  }
+
+  .item-text{
+    margin-top: 278px !important;
+    position: absolute;
+    z-index: 13;
+    color: #ffffff;
+    font-family: 'Birthstone';
+    font-size: 32px;
+  }
+  .img{
+    /* top: 100%; */
+    position: inherit;
+    max-width: 100%;
+    z-index: 2;
+    max-height: 100%;
+    filter: brightness(75%);
+    object-fit: cover;
+    height: 545px;
+  
   }
 
  

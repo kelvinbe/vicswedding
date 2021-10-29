@@ -26,6 +26,8 @@
   display: flex;
   text-align: center;
   align-items: center;
+  justify-content: center;
+
 }
 
 .counter{
@@ -79,7 +81,16 @@
 
 .button-color {
   background-color: #B95C50 !important;
+  color: antiquewhite !important;
+  width: 175px;
+  
 }
+
+.MuiButton-label{
+  color: #6f6454 !important;
+}
+
+
 
 .dialog-button {
   background-color: rgb(240, 93, 117) !important;

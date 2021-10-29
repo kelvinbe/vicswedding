@@ -6,14 +6,18 @@ import Service from '../components/Services/Service'
 import Meet from '../components/ContactUs/ContactUs'
 import Roracio from '../components/Roracio/Roracio'
 
+
 import Footer from '../components/Footer/Footer';
 Landing.propTypes = {
     
 };
 
 function Landing(props) {
+
+
     return (
         <div>
+
             <Home />
             <Meet />
             <Service />
@@ -21,6 +25,7 @@ function Landing(props) {
             <About />
             <Footer />
         </div>
+
     );
 }
 

@@ -79,16 +79,16 @@ function Service(props) {
 
     return (
         <div className="service">
-           {/* <img
+           <img
         component='img'
         className="flowers-services"
         height="140"
-        src={flowers}/> */}
+        src={flowers}/>
           <Grid container>
             
             
         </Grid>
-             <Grid item xs={12}>
+             <Grid item xs={12} sm={6} md={8} sm={12}>
            {/* <h1 className="text-service">GROOM & BRIDE</h1>  */}
            <Grid item xs ={12} sm={6} md={7} sm={12}>
                 {Slideshow()}

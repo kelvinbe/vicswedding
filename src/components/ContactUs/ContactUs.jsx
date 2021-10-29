@@ -19,11 +19,15 @@ import sharon from '../../assets/sharon.png'
 import separator from '../../assets/separator.png'
 import vic2 from '../../assets/victorpic.jpg'
 import vic3 from '../../assets/victorpic1.jpg'
+import sha from '../../assets/Sharon.jpg'
+import sha1 from '../../assets/SharonPic.jpg'
+
+
 
 import { Typography } from '@material-ui/core';
 import flowers from '../../assets/flowers.png'
 import Time from './timer';
-
+import ShowMoreText from "react-show-more-text";
 
 
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -56,13 +60,48 @@ const fadeImages = [
     )
 }
 
+const fadeImages1 = [
+  sha1,
+  sha
+];
+
+const Slideshow1 = () => {
+  return (
+    <div className="slide-container">
+      <Fade>
+        <div className="each-slide">
+          <div style={{'backgroundImage': `url(${fadeImages1[0]})`,'filter': 'grayscale(100%)'}}>
+          </div>
+        </div>
+        <div className="each-slide">
+          <div style={{'backgroundImage': `url(${fadeImages1[1]})`}}>
+          </div>
+        </div>
+      </Fade>
+    </div>
+  )
+}
+
 
 
 
 function Meet(props) {
 
-    const [scrollNav, setScrollNav] = useState(false)
+ function  executeOnClick(isExpanded) {
+    console.log(isExpanded);
+}
 
+
+    const [scrollNav, setScrollNav] = useState(false)
+    const [showText, setShowText] = useState(false)
+    const [showTextVic, setShowTextVic] = useState(false)
+
+
+
+  const showTypo = () => {
+
+    setShowText(true)
+  }
 
     useEffect(() => {
         window.addEventListener('scroll', changeNav)
@@ -89,16 +128,42 @@ function Meet(props) {
 
           <Grid container className="intros" spacing={3}>
           <Grid xs={12} md={3} className="photos">
-            {Slideshow()}
+            {Slideshow1()}
               <div className="names">
-             <h3>Sharon</h3>
+             <h3>Sharon Muthoni</h3>
             </div> 
-            <Typography variant="h3" style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px'}}>
-    "Leo ipsum justo, enim augue neque, eu pulvinar etiam. 
-    Elit quam gravida a nec. Mauris eu nulla vulputate vitae nisl, 
-    massa vulputate tellus sit. Sit integer cras nibh sodales."
+            <div variant="h3" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px'}}>
+      {!showTextVic && <h3 style={{fontFamily: 'Teko, sans-serif', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
+        "I will begin my message simply from God. 
+    God is the creator God. In His wisdom, He revealed Himself through the Holy Scriptures. 
+    I believe in His Holy Word. His word has guided every decision that I have made with regards to my relationship with Sharon. 
+
+<a href="javascript:void(0);" onClick={() => setShowTextVic(!showTextVic)}>Show More</a>
+        </h3>}
+
+        {showTextVic && <Typography variant="h3" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"  style={{fontFamily: 'Teko, sans-serif', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
+    "I will begin my message simply from God. 
+    God is the creator God. In His wisdom, He revealed Himself through the Holy Scriptures. 
+    I believe in His Holy Word. His word has guided every decision that I have made with regards to my relationship with Sharon. 
+    The decision I made to marry her was simply informed from the truth of scripture. 
+    Scripture tells me that Christ laid down his life, so that I may live by faith in Him. He suffered, bled, and died on my behalf so that I may be rescued from the guilt and penalty of my sin. 
+    This was/is God’s truest expression of what love is. 
+Romans 5:6 – 8 For while we were still weak, at the right time Christ died for the ungodly. 
+7 For one will scarcely die for a righteous person—though perhaps for a good person one would dare even to die— 8 but God shows his love for us in that while we were still sinners, Christ died for us.
+Therefore, in a similar manner, I desire to lay down my life for this wonderful lady by the name Sharon Muthoni; daughter of the Most High God. 
+By the grace of God, it is my prayer that I will grow to be patient with her, kind, selfless and to ever point her to her Savior, Redeemer, and Friend – The Lord Jesus Christ. 
+Since marriage is an institution created by God, 
+I pray that Only He may receive all the glory through our union. 
+To the praise of his glorious grace, with which he has blessed us in the Beloved. Amen. 
+"<a href="javascript:void(0);" onClick={() => setShowTextVic(!showTextVic)}>Show Less</a>
   
-    </Typography>
+    </Typography> }
+  
+    </div>
             </Grid> 
      
             <Grid xs={12} md={2} className="separator">
@@ -111,7 +176,18 @@ function Meet(props) {
              <h3>Victor Muthomi</h3>
                </div> 
                {/* <h3 style={{color: '#965A00'}}>Groom</h3> */}
-    <Typography variant="h3" style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px'}}>
+     
+     {!showText && <h3 style={{fontFamily: 'Teko, sans-serif', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
+        "I will begin my message simply from God. 
+    God is the creator God. In His wisdom, He revealed Himself through the Holy Scriptures. 
+    I believe in His Holy Word. His word has guided every decision that I have made with regards to my relationship with Sharon. 
+<a href="javascript:void(0);" onClick={() => setShowText(!showText)}>Show More</a>
+        </h3>}
+
+
+   {showText && <Typography variant="h3" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"  style={{fontFamily: 'Teko, sans-serif', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
     "I will begin my message simply from God. 
     God is the creator God. In His wisdom, He revealed Himself through the Holy Scriptures. 
     I believe in His Holy Word. His word has guided every decision that I have made with regards to my relationship with Sharon. 
@@ -123,11 +199,11 @@ Romans 5:6 – 8 For while we were still weak, at the right time Christ died for
 Therefore, in a similar manner, I desire to lay down my life for this wonderful lady by the name Sharon Muthoni; daughter of the Most High God. 
 By the grace of God, it is my prayer that I will grow to be patient with her, kind, selfless and to ever point her to her Savior, Redeemer, and Friend – The Lord Jesus Christ. 
 Since marriage is an institution created by God, 
-I pray that Only He may receive the all the glory through our union. 
+I pray that Only He may receive all the glory through our union. 
 To the praise of his glorious grace, with which he has blessed us in the Beloved. Amen.
-"
+"<a href="javascript:void(0);" onClick={() => setShowText(!showText)}>Show Less</a>
   
-    </Typography>
+    </Typography> }
             </Grid>
  
           </Grid>
@@ -135,7 +211,7 @@ To the praise of his glorious grace, with which he has blessed us in the Beloved
           <Grid container style={{justifyContent: 'center'}}>
             <Grid style={{textAlign: 'center'}}>
               <h2 className="married" style={{color: '#dcc8b4', fontFamily: "Alex Brush",fontWeight: '400',lineHeight: '1.2'}}>
-                Are Getting Married
+               We Are Getting Married
               </h2>
               <p style={{color: '#888888', fontSize: '120%', fontStyle: 'italic'}}>
                 on 29 January, 2022-Nairobi, Kenya

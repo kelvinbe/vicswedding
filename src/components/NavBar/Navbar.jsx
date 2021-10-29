@@ -10,6 +10,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 import {Link as RouterLink} from 'react-router-dom'
 import MenuIcon from '@material-ui/icons/Menu'
 import ring from '../../assets/Vector.png'
+import {animateScroll as scroll} from 'react-scroll'
+import './Navbar.css'
 
 
 const useStyles = makeStyles(() => ({
@@ -91,19 +93,48 @@ export default function Header() {
     const headersData = [
         {
           label: "Home",
-          href: "/home",
+          href: "/",
+          onSelect: () => scroll.scrollTo('/', {
+            smooth: true,
+            offset: -80,
+            duration: 500,
+            spy:true,
+            exact:true
+        })
         },
         {
-          label: "Groom & Bride",
-          href: "/mentors",
-        },
-        {
-          label: "When & Where",
-          href: "/account",
+          label: "Meet",
+          color: 'red',
+          href: "/meet",
+          onSelect: () => scroll.scrollTo('/meet', {
+            smooth: true,
+            offset: -80,
+            duration: 500,
+            spy:true,
+            exact:true
+        })
         },
         {
           label: "The Journey",
-          href: "/logout",
+          href: "/journey",
+          onSelect: () => scroll.scrollTo('/journey', {
+            smooth: true,
+            offset: -80,
+            duration: 500,
+            spy:true,
+            exact:true
+        })
+        },
+        {
+          label: "Support Us",
+          href: "/support",
+          onSelect: () => scroll.scrollTo('/support', {
+            smooth: true,
+            offset: -80,
+            duration: 500,
+            spy:true,
+            exact:true
+        })
         },
       ];
 

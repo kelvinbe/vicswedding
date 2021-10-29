@@ -66,7 +66,7 @@ function About(props) {
         Stand with us on this journey
     </Typography>
       <CardActions>
-        <Button variant="contained" className="button-color" onClick={handleClickOpen}>Support</Button>
+        <Button variant="contained" className="button-color" style={{color: 'white'}} onClick={handleClickOpen}>Support</Button>
         <Dialog
         open={open}
         TransitionComponent={Transition}
@@ -77,13 +77,9 @@ function About(props) {
         <DialogTitle>{"Thank You For Your Support!"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-            Please Send your contribution to the following Mpesa Paybill
+            Please Send your contribution to the following Mpesa Number <span style={{color: 'blue'}}>0793878628</span>
           </DialogContentText>
         </DialogContent>
-        <DialogActions>
-          <Button variant="contained" className="dialog-button" onClick={handleClose}>Disagree</Button>
-          <Button variant="contained" className="dialog-button" onClick={handleClose}>Agree</Button>
-        </DialogActions>
       </Dialog>
       </CardActions>
       </CardContent>
