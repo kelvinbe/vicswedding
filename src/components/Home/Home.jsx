@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../Home/Home.css';
-import vic1 from '../../assets/vic1.jpg'
+import main from '../../assets/main.jpg'
 import vic5 from '../../assets/vic5.jpg'
 import vic3 from '../../assets/vic3.jpg'
 import maua from '../../assets/maua.png'
@@ -60,14 +60,14 @@ function Home(props) {
   
         <Grid container className="container">
             <Grid item xs={12} xl={12} className="item-text">
-           <h1 className="text-home" data-aos="fade-up" >Sharon & Victor</h1> 
+           <h1 className="text-home" data-aos="fade-up" >Victor & Sharon</h1> 
            <h3 className="text-home" data-aos="fade-up" data-aos-duration="2000">Are getting married</h3>  
            {/* <img src={maua} alt="" className="img" />*/}
 
             
             </Grid>
             <Grid item className="item-img">
-                <img src={vic1} alt="" className="img" />
+                <img src={main} alt="" className="img" />
 
                 {/* {Slideshow()} */}
             </Grid>

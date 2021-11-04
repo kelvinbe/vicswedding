@@ -23,3 +23,23 @@
     top: 0;
     left: 0;
 }
+
+
+.MuiTab-wrapper {
+    animation: color-change 1s infinite;
+    
+  }
+
+
+  @keyframes color-change {
+    0% { color: red; }
+    50% { color: grey; }
+    100% { color: red; }
+  }
+  
+
+.MuiTabs-flexContainer {
+
+    justify-content: center;
+    display: flex;
+}

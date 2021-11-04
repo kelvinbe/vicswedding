@@ -1,12 +1,15 @@
 import React, {useState, useEffect} from 'react';
-import vic1 from '../../assets/vic1.jpg'
-import vic2 from '../../assets/vic2.jpg'
-import vic5 from '../../assets/vic5.jpg'
-import vic4 from '../../assets/roracio.jpg'
-import ror14 from '../../assets/RURACIOPHOTOS-385.jpg'
-import ror15 from '../../assets/RURACIOPHOTOS-396.jpg'
-import ror16 from '../../assets/RURACIOPHOTOS-424.jpg'
-import ror17 from '../../assets/RURACIOPHOTOS-440.jpg'
+
+import engaged from '../../assets/engaged.jpg'
+import rura from '../../assets/rura.jpg'
+import rura1 from '../../assets/rura1.jpg'
+import rura2 from '../../assets/rura2.jpg'
+import rura3 from '../../assets/rura3.jpg'
+import rura4 from '../../assets/rura4.jpg'
+import rura5 from '../../assets/rura5.jpg'
+
+
+
 
 
 import {Tab,Tabs, Box} from '@material-ui/core';
@@ -18,12 +21,14 @@ import { motion } from 'framer-motion'
 
 
 const images = [
-    {key: 3, pic: vic5, tag: 0},
-    {key: 17, pic: ror14, tag: 1},
-    {key: 18, pic: ror15, tag: 1},
-    {key: 19, pic: ror16, tag: 1},
-    {key: 20, pic: vic4, tag: 1},
-    {key: 33, pic: ror17, tag: 1},
+    {key: 3, pic: engaged, tag: 0},
+    {key: 17, pic: rura, tag: 1},
+    {key: 18, pic: rura1, tag: 1},
+    {key: 19, pic: rura2, tag: 1},
+    {key: 20, pic: rura3, tag: 1},
+    {key: 33, pic: rura4, tag: 1},
+    {key: 34, pic: rura5, tag: 1},
+
 ]
 
 

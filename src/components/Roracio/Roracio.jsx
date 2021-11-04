@@ -79,7 +79,7 @@ function Roracio(props) {
         <div className="journey">
            <img
         component='img'
-        className="flowers-services"
+        className="flowers-journey"
         height="140"
         src={flowers}/>
           <Grid container>
@@ -97,13 +97,13 @@ function Roracio(props) {
 
            
            <h3 style={{color: '#965A00'}}>Hopes For The Future</h3>
-    <Typography variant="h3" style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px'}}>
-    Leo ipsum justo, enim augue neque, eu pulvinar etiam. 
-    Elit quam gravida a nec. Mauris eu nulla vulputate vitae nisl, 
-    massa vulputate tellus sit. Sit integer cras nibh sodales. 
-    Sit pharetra, tellus elit in.
-    Adipiscing vulputate platea pharetra et purus ultricies. 
-    Aliquam et, amet, quam neque. Pellentesque id risus
+    <Typography variant="h3" style={{fontFamily: 'Teko, sans-serif', color: 'dark-grey', fontSize: '25px'}}>
+    “Our hope as pilgrims is that we would strive side by side as we journey together towards our eternal home with Christ; 
+    pursuing Christ, putting off sin and putting on Christ.
+    What's more is that we hope that the striving and pilgrimage would be richer because of our marriage union. 
+    The end goal is that we may be rooted and firmly grounded in Christ; 
+    being renewed daily into image of Christ till the day the King returns,glorifies us and takes us to the celestial city. 
+    To the praise of his glorious grace. Amen.”
     </Typography>
 
             </Grid>

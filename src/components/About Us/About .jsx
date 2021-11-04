@@ -66,7 +66,7 @@ function About(props) {
         Stand with us on this journey
     </Typography>
       <CardActions>
-        <Button variant="contained" className="button-color" style={{color: 'white'}} onClick={handleClickOpen}>Support</Button>
+        <Button variant="contained" className="button-color" style={{color: 'white !important'}} onClick={handleClickOpen}>Support</Button>
         <Dialog
         open={open}
         TransitionComponent={Transition}

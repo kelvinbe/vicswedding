@@ -135,7 +135,7 @@ function Meet(props) {
             <div variant="h3" data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000" style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px'}}>
-      {!showTextVic && <h3 style={{fontFamily: 'Teko, sans-serif', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
+      {!showTextVic && <h3 style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
         "I will begin my message simply from God. 
     God is the creator God. In His wisdom, He revealed Himself through the Holy Scriptures. 
     I believe in His Holy Word. His word has guided every decision that I have made with regards to my relationship with Sharon. 
@@ -145,7 +145,7 @@ function Meet(props) {
 
         {showTextVic && <Typography variant="h3" data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"  style={{fontFamily: 'Teko, sans-serif', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
+     data-aos-duration="2000"  style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
     "I will begin my message simply from God. 
     God is the creator God. In His wisdom, He revealed Himself through the Holy Scriptures. 
     I believe in His Holy Word. His word has guided every decision that I have made with regards to my relationship with Sharon. 
@@ -177,7 +177,7 @@ To the praise of his glorious grace, with which he has blessed us in the Beloved
                </div> 
                {/* <h3 style={{color: '#965A00'}}>Groom</h3> */}
      
-     {!showText && <h3 style={{fontFamily: 'Teko, sans-serif', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
+     {!showText && <h3 style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
         "I will begin my message simply from God. 
     God is the creator God. In His wisdom, He revealed Himself through the Holy Scriptures. 
     I believe in His Holy Word. His word has guided every decision that I have made with regards to my relationship with Sharon. 
@@ -187,7 +187,7 @@ To the praise of his glorious grace, with which he has blessed us in the Beloved
 
    {showText && <Typography variant="h3" data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"  style={{fontFamily: 'Teko, sans-serif', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
+     data-aos-duration="2000"  style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
     "I will begin my message simply from God. 
     God is the creator God. In His wisdom, He revealed Himself through the Holy Scriptures. 
     I believe in His Holy Word. His word has guided every decision that I have made with regards to my relationship with Sharon. 
