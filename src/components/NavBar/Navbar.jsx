@@ -136,6 +136,17 @@ export default function Header() {
             exact:true
         })
         },
+        {
+          label: "Hymes",
+          href: "/hymes",
+          onSelect: () => scroll.scrollTo('/support', {
+            smooth: true,
+            offset: -80,
+            duration: 500,
+            spy:true,
+            exact:true
+        })
+        }
       ];
 
     const getDrawerChoices = () => {

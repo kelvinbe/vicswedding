@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import './Loading.css';
 import loading from '../../assets/wedload.gif'
-import flowers from '../../assets/maua.png'
 import ring from '../../assets/Vector.png'
 
 import Grid from '@material-ui/core/Grid';

@@ -1,22 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
-import room from '../../assets/best.jpg'
-import room2 from '../../assets/room.jpg'
-import room3 from '../../assets/rom.png'
+
 import '../Services/Services.css';
 import { Fade } from 'react-slideshow-image';
-import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
-import AlarmIcon from '@material-ui/icons/Alarm';
-import AirlineSeatIndividualSuiteIcon from '@material-ui/icons/AirlineSeatIndividualSuite';
-import CountUp, {startAnimation}  from 'react-countup';
-import Button from '@material-ui/core/Button';
 import AOS from 'aos';
 import vic3 from '../../assets/vic3.jpg'
 import vic2 from '../../assets/vic2.jpg'
-import { Typography } from '@material-ui/core';
 import flowers from '../../assets/flowers.png'
 
 

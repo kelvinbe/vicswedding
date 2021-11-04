@@ -2,15 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../Home/Home.css';
 import main from '../../assets/main.jpg'
-import vic5 from '../../assets/vic5.jpg'
-import vic3 from '../../assets/vic3.jpg'
-import maua from '../../assets/maua.png'
-import Sakura from '../../../node_modules/sakura-js/dist/sakura'
+
 
 import Grid from '@material-ui/core/Grid';
 import AOS from 'aos';
-import { Fade } from 'react-slideshow-image';
-import {Helmet} from "react-helmet";
+
+
 
 // import Leaves from './leaves';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
