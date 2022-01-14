@@ -11,12 +11,18 @@ import Meet from './components/ContactUs/ContactUs'
 import Roracio from './components/Roracio/Roracio'
 import "react-slideshow-image/dist/styles.css";
 import Loading from './components/Loading/Loading'
-import 'react-circular-progressbar/dist/styles.css';
+import { LinkPreview } from '@dhaiwat10/react-link-preview';
+
+
+// const Home = () => {
+//   return <LinkPreview url='https://www.youtube.com/watch?v=dQw4w9WgXcQ' width='400px' />;
+// };
+
 function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 5000)
+    setTimeout(() => setLoading(false), 9000)
   }, [])
 
 

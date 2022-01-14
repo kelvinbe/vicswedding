@@ -15,7 +15,6 @@ import sha1 from '../../assets/SharonPic.jpg'
 import { Typography } from '@material-ui/core';
 import flowers from '../../assets/flowers.png'
 import Time from './timer';
-import ShowMoreText from "react-show-more-text";
 
 
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -27,7 +26,7 @@ AOS.init({
 
 
 const fadeImages = [
-  vic2,
+  vic3,
   vic3
 ];
 
@@ -49,7 +48,7 @@ const fadeImages = [
 }
 
 const fadeImages1 = [
-  sha1,
+  sha,
   sha
 ];
 
@@ -120,33 +119,35 @@ function Meet(props) {
               <div className="names">
              <h3>Sharon Muthoni</h3>
             </div> 
-            <div variant="h3" data-aos="flip-left"
+            <div variant="h3"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000" style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px'}}>
-      {!showTextVic && <h3 style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
-        "I will begin my message simply from God. 
-    God is the creator God. In His wisdom, He revealed Himself through the Holy Scriptures. 
-    I believe in His Holy Word. His word has guided every decision that I have made with regards to my relationship with Sharon. 
+      {!showTextVic && <h3 style={{fontFamily: 'Cormorant Garamond, serif', color: 'dark-grey', fontSize: '22px', fontWeight: '100'}}>
+    "Let each of you look not only to his own interests, 
+    but also to the interests of others. Have this mind among yourselves, 
+    which is yours in Christ Jesus, who, though he was in the form of God, 
+    did not count equality with God a thing to be grasped 
+     
 
 <a href="javascript:void(0);" onClick={() => setShowTextVic(!showTextVic)}>Show More</a>
         </h3>}
 
         {showTextVic && <Typography variant="h3" data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"  style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
-    "I will begin my message simply from God. 
-    God is the creator God. In His wisdom, He revealed Himself through the Holy Scriptures. 
-    I believe in His Holy Word. His word has guided every decision that I have made with regards to my relationship with Sharon. 
-    The decision I made to marry her was simply informed from the truth of scripture. 
-    Scripture tells me that Christ laid down his life, so that I may live by faith in Him. He suffered, bled, and died on my behalf so that I may be rescued from the guilt and penalty of my sin. 
-    This was/is God’s truest expression of what love is. 
-Romans 5:6 – 8 For while we were still weak, at the right time Christ died for the ungodly. 
-7 For one will scarcely die for a righteous person—though perhaps for a good person one would dare even to die— 8 but God shows his love for us in that while we were still sinners, Christ died for us.
-Therefore, in a similar manner, I desire to lay down my life for this wonderful lady by the name Sharon Muthoni; daughter of the Most High God. 
-By the grace of God, it is my prayer that I will grow to be patient with her, kind, selfless and to ever point her to her Savior, Redeemer, and Friend – The Lord Jesus Christ. 
-Since marriage is an institution created by God, 
-I pray that Only He may receive all the glory through our union. 
-To the praise of his glorious grace, with which he has blessed us in the Beloved. Amen. 
+     data-aos-duration="2000"  style={{fontFamily: 'Cormorant Garamond, serif', color: 'dark-grey', fontSize: '22px', fontWeight: '100'}}>
+    "Let each of you look not only to his own interests, 
+    but also to the interests of others. Have this mind among yourselves, 
+    which is yours in Christ Jesus, who, though he was in the form of God, 
+    did not count equality with God a thing to be grasped, but emptied himself, 
+    by taking the form of a servant, being born in the likeness of men. 
+    And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. 
+    Philippians 2:4 - 8 ESV 
+    I cannot fathom how wonderful a love this is, that ransomed a sinner such as I. 
+    The most beautiful expression of love and devotion.
+    I pray to fashion my love for Victor after this love that our Saviour perfectly embodied.
+My Lord, who perfectly embodied humility and love, 
+is whom I cling to, that He would strengthen and equip me every day, to love Victor in truth and in deed. 
+To strive to show him honour. For the sake of our Lord Jesus Christ, who is forever praised Amen.
 "<a href="javascript:void(0);" onClick={() => setShowTextVic(!showTextVic)}>Show Less</a>
   
     </Typography> }
@@ -165,17 +166,17 @@ To the praise of his glorious grace, with which he has blessed us in the Beloved
                </div> 
                {/* <h3 style={{color: '#965A00'}}>Groom</h3> */}
      
-     {!showText && <h3 style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
+     {!showText && <h3 style={{fontFamily: 'Cormorant Garamond, serif', color: 'dark-grey', fontSize: '22px', fontWeight: '100'}}>
         "I will begin my message simply from God. 
     God is the creator God. In His wisdom, He revealed Himself through the Holy Scriptures. 
-    I believe in His Holy Word. His word has guided every decision that I have made with regards to my relationship with Sharon. 
+    I believe in His Holy Word. His word has guided every decision that I have made with regards to my relationship with 
 <a href="javascript:void(0);" onClick={() => setShowText(!showText)}>Show More</a>
         </h3>}
 
 
    {showText && <Typography variant="h3" data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"  style={{fontFamily: 'Birthstone', color: 'dark-grey', fontSize: '25px', fontWeight: '100'}}>
+     data-aos-duration="2000"  style={{fontFamily: 'Cormorant Garamond, serif', color: 'dark-grey', fontSize: '22px', fontWeight: '100'}}>
     "I will begin my message simply from God. 
     God is the creator God. In His wisdom, He revealed Himself through the Holy Scriptures. 
     I believe in His Holy Word. His word has guided every decision that I have made with regards to my relationship with Sharon. 
@@ -188,8 +189,7 @@ Therefore, in a similar manner, I desire to lay down my life for this wonderful 
 By the grace of God, it is my prayer that I will grow to be patient with her, kind, selfless and to ever point her to her Savior, Redeemer, and Friend – The Lord Jesus Christ. 
 Since marriage is an institution created by God, 
 I pray that Only He may receive all the glory through our union. 
-To the praise of his glorious grace, with which he has blessed us in the Beloved. Amen.
-"<a href="javascript:void(0);" onClick={() => setShowText(!showText)}>Show Less</a>
+To the praise of his glorious grace, with which he has blessed us in the Beloved. Amen."<a href="javascript:void(0);" onClick={() => setShowText(!showText)}>Show Less</a>
   
     </Typography> }
             </Grid>

@@ -2,9 +2,7 @@ import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import '../About Us/About.css';
-import discuss from '../../assets/explaining.svg'
-import CountUp, {startAnimation}  from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor';
+
 import flowers from '../../assets/flowers.png'
 import rings from '../../assets/rings.png'
 
@@ -18,14 +16,6 @@ AOS.init({
 });
 
 
-const onVisibilityChange = isVisible => {
-    if (isVisible) {
-        if (this.state.scrollStatus) {
-            startAnimation(this.myCountUp);
-            this.setState({ scrollStatus: false });
-        }
-    }
-}
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;

@@ -88,7 +88,7 @@ function Roracio(props) {
 
            
            <h3 style={{color: '#965A00'}}>Hopes For The Future</h3>
-    <Typography variant="h3" style={{fontFamily: 'Teko, sans-serif', color: 'dark-grey', fontSize: '25px'}}>
+    <Typography variant="h3" style={{fontFamily: 'Cormorant Garamond, serif', color: 'dark-grey', fontSize: '25px'}}>
     “Our hope as pilgrims is that we would strive side by side as we journey together towards our eternal home with Christ; 
     pursuing Christ, putting off sin and putting on Christ.
     What's more is that we hope that the striving and pilgrimage would be richer because of our marriage union. 

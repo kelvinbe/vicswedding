@@ -14,7 +14,7 @@ function Footer(props) {
                 <Container maxWidth="lg" >
                 <Grid container spacing={5} style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', textAlign: 'center'}}>
                     <Grid item xs={12} sm={4} style={{marginBottom: '14px'}}>
-                        @2021 Kelvin Beno All Rights Reserved
+                        @2022 Kelvin Beno All Rights Reserved
                         </Grid>
                 </Grid>
                 </Container>
